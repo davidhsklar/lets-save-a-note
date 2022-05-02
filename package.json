@@ -1,0 +1,20 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "an App that takes and tracks notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "none",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidhsklar/save-me-a-note.git"
+  },
+  "author": "david sklar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidhsklar/save-me-a-note/issues"
+  },
+  "homepage": "https://github.com/davidhsklar/save-me-a-note#readme"
+}
