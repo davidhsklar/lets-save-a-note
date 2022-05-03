@@ -1,4 +1,8 @@
-// dependencies eeded to work right
+/* I used PATH instead of router because there are not too many API calls being made
+by the application.  If there were 10 or more, I would use the built in
+express router method to make it easier to manage*/
+
+// dependencies needed to work right
 
 const express = require("express");
 const app = express();
@@ -46,7 +50,7 @@ app.post("/api/notes", (req, res) => {
     res.json(notes);
 });
 
-// deleting notes
+// DELETE function that deletes notes based on ID parameter
 
 app.delete("/api/notes/:id", (req, res) => {
     notes = notes.filter(notes => {
