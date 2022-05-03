@@ -49,14 +49,14 @@ app.post("/api/notes", (req, res) => {
 // deleting notes
 
 app.delete("/api/notes/:id", (req, res) => {
-    notes = notes.filter(note => note.id !== req.params.id);
-    fs.writeFileSync(
-        path.join(__dirname, "./db/db.json"),
-        JSON.stringify(notes, null, 2)
-    );
-    res.json(notes);
-});
- 
+    notes = notes.filter(notes => {
+        if (notes.id !== req.params.id) {
+         return notes;
+        }
+       });
+       res.json(notes);
+      });
+
 
 // Server listen for start
 
