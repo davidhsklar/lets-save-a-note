@@ -34,7 +34,7 @@ app.get("*", (req, res) => {
 });
 
 
-// routing and using POST to save notes
+// routing and using POST to save new notes
 
 app.post("/api/notes", (req, res) => {
     req.body.id = uniqid();
